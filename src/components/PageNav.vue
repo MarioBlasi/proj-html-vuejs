@@ -2,7 +2,7 @@
 import { store } from "../store";
 
 export default {
-  name: "PageHeader",
+  name: " PageNav",
   data() {
     return { store };
   },
@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <h1 class="bg-danger">header</h1>
+  <h1>nav</h1>
 </template>
 
 <style lang="scss"></style>
