@@ -81,13 +81,14 @@ export default {
                   </a>
                 </li>
               </ul>
+
               <font-awesome-icon
-                icon="fa-solid fa-user-secret "
-                class="icon m-1"
+                icon="fa-solid fa-cart-shopping"
+                class="icon m-1 p-1"
               />
               <font-awesome-icon
-                icon="fa-solid fa-user-secret "
-                class="icon m-1"
+                icon="fa-regular fa-circle-user"
+                class="icon m-1 p-1"
               />
             </div>
           </div>
@@ -101,11 +102,8 @@ export default {
             placeholder="Search..."
             aria-label="Search"
           />
-          <span class="input-group-text icon" id="icone">
-            <font-awesome-icon icon="fa-solid fa-user-secret " />
-            <i class="fa-regular fa-magnifying-glass"></i>
-          </span>
         </div>
+        <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="glass" />
       </div>
     </div>
   </nav>
@@ -127,11 +125,22 @@ export default {
   }
   .search {
     border-radius: 5px;
+    height: 3rem;
   }
-  .icon,
+  .icon {
+    font-size: x-large;
+    color: aliceblue;
+  }
   #icone {
     font-size: xx-large;
     color: aliceblue;
+  }
+  .glass {
+    color: rgb(31, 173, 150);
+    font-size: large;
+    position: absolute;
+    left: 570px;
+    top: 30px;
   }
 }
 </style>

@@ -24,19 +24,13 @@ export default {
             <h5>Get teamed up with peaople of the same will</h5>
             <div class="vertical-icon">
               <font-awesome-icon
-                icon="fa-solid fa-user-secret "
+                icon="fa-solid fa-ruler-combined"
                 class="icons"
               />
+              <font-awesome-icon icon="fa-solid fa-life-ring" class="icons" />
+              <font-awesome-icon icon="fa-solid fa-book" class="icons" />
               <font-awesome-icon
-                icon="fa-solid fa-user-secret "
-                class="icons"
-              />
-              <font-awesome-icon
-                icon="fa-solid fa-user-secret "
-                class="icons"
-              />
-              <font-awesome-icon
-                icon="fa-solid fa-user-secret "
+                icon="fa-solid fa-cart-shopping"
                 class="icons"
               />
             </div>
@@ -97,7 +91,6 @@ header {
       flex-direction: column;
       border-radius: 5px;
       width: 2.5rem;
-      font-size: 0px;
       top: 10rem;
       right: 0rem;
       background-color: rgb(246, 243, 246);
@@ -106,6 +99,7 @@ header {
         margin-left: 2px;
         padding: 0.5rem;
         height: 1.5rem;
+        background-color: rgb(246, 243, 246);
       }
     }
   }
