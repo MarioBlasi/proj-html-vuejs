@@ -37,7 +37,6 @@ export default {
           current_page: false,
         },
       ],
-
       store,
     };
   },
@@ -56,48 +55,56 @@ export default {
       </div>
       <div class="row link">
         <div class="col">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-              <li class="nav-item p-2" v-for="item in menu">
-                <a
-                  class="nav-link active nav-link dropdown-toggle"
-                  :href="item.href"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >{{ item.text }}
-                </a>
-              </li>
-            </ul>
+          <div class="menu">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item p-2" v-for="item in menu">
+                  <a
+                    class="nav-link active nav-link dropdown-toggle"
+                    :href="item.href"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >{{ item.text }}
+                  </a>
+                </li>
+              </ul>
+              <font-awesome-icon
+                icon="fa-solid fa-user-secret "
+                class="icon m-1"
+              />
+              <font-awesome-icon
+                icon="fa-solid fa-user-secret "
+                class="icon m-1"
+              />
+            </div>
           </div>
         </div>
       </div>
       <div class="row input">
-        <div class="col">
-          <form class="d-flex" role="search">
-            <input
-              class="form-control p-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <i class="fa-solid fa-magnifying-glass bg-light">Search</i>
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+        <div class="col bar input-group">
+          <input
+            class="search form-control"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+          <span class="input-group-text icon" id="icone">
+            <font-awesome-icon icon="fa-solid fa-user-secret " />
+            <i class="fa-regular fa-magnifying-glass"></i>
+          </span>
         </div>
       </div>
     </div>
@@ -111,8 +118,20 @@ export default {
   a {
     color: rgb(255, 255, 255) !important;
   }
-}
-img {
-  max-width: 100%;
+  .menu {
+    margin-left: 6rem;
+    font-size: large;
+  }
+  .bar {
+    margin-right: 3rem;
+  }
+  .search {
+    border-radius: 5px;
+  }
+  .icon,
+  #icone {
+    font-size: xx-large;
+    color: aliceblue;
+  }
 }
 </style>
