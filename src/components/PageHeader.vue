@@ -145,6 +145,7 @@ header {
   .btn {
     height: 3.5rem;
     width: 12rem;
+    background-color: rgb(39, 171, 148);
   }
 }
 </style>

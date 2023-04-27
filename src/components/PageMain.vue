@@ -155,106 +155,179 @@ export default {
       </div>
     </div>
     <!-- SECTION 2 -->
-    <div class="sectionThree mt-5">
-      <div class="container">
+    <div class="sectionThree">
+      <div class="container pt-5">
         <div class="row">
-          <div class="col-12 text-center">titolo</div>
-          <div class="col-12 text-center">titolo grande</div>
+          <div class="col-12 text-center">
+            <p>CHOSE A COURSE TO STARTED</p>
+          </div>
+          <div class="col-12 text-center">
+            <h1 class="ps-4">
+              Latest Featured <font color="$mountain-meadow">Courses</font>
+            </h1>
+          </div>
         </div>
       </div>
       <!-- titolo -->
-      <div class="container text-center">
-        <div class="row row-cols-2 p-5">
-          <div class="col d-flex boxTextImg">
+      <div class="container text-left">
+        <div class="row row-cols-2 p-5 d-flex justify-content-center">
+          <div class="col d-flex boxTextImg p-3">
             <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
 
             <div class="col d-flex flex-column textColumn">
-              <h3 class="number">
-                <font color="green"> <b> $ 40.oo</b></font>
-              </h3>
+              <h4 class="number">
+                <font color="$mountain-meadow"><b>$ 40.oo</b></font>
+              </h4>
               <h6 class="textStrong">
-                Learning to Write as a professional Author
+                <b>Learning to Write as a professional Author </b>
               </h6>
               <span class="lessons"
-                ><font color="grey">20 Lessons 50 Students</font></span
+                ><font color="grey"><b> 20 Lessons 50 Students</b></font></span
               >
             </div>
           </div>
           <!-- box 1 left TOP -->
-          <div class="col d-flex boxTextImg">
-            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
+          <div class="col d-flex boxTextImg p-3">
+            <img
+              src="../assets/img/stock-full-hd-03-480x298.jpg"
+              class="borderImg"
+            />
 
             <div class="col d-flex flex-column textColumn">
-              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h4 class="number">
+                <font color="$mountain-meadow"><b>Free</b></font>
+              </h4>
               <h6 class="textStrong">
-                Learning to Write as a professional Author
+                <b>Customer-centric Info-Tech Strategies</b>
               </h6>
               <span class="lessons"
-                ><font color="grey">box 2 right top</font></span
+                ><font color="grey"><b> 24 Lessons 769 Students</b></font></span
               >
             </div>
           </div>
           <!-- box 2 right top -->
-          <div class="col d-flex boxTextImg">
-            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
-
+          <div class="col d-flex boxTextImg p-3">
+            <img
+              src="../assets/img/stock-full-hd-04-480x298.jpg"
+              class="borderImg"
+            />
             <div class="col d-flex flex-column textColumn">
-              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h4 class="number">
+                <font color="$mountain-meadow"><b>$ 19.oo</b></font>
+              </h4>
               <h6 class="textStrong">
-                Learning to Write as a professional Author
+                <b>Open Programming Courses for Everyone:Pyton</b>
               </h6>
               <span class="lessons"
-                ><font color="grey">box left middle</font></span
+                ><font color="grey"><b> 17 Lessons 62 Students</b></font></span
               >
             </div>
           </div>
           <!-- box  left middle -->
-          <div class="col d-flex boxTextImg">
-            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
-
+          <div class="col d-flex boxTextImg p-3">
+            <img
+              src="../assets/img/stock-full-hd-06-480x298.jpg"
+              class="borderImg"
+            />
             <div class="col d-flex flex-column textColumn">
-              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h4 class="number">
+                <font color="$mountain-meadow"><b>$ 26.oo</b></font>
+              </h4>
               <h6 class="textStrong">
-                Learning to Write as a professional Author
+                <b>Accademic Listening and Note-taking</b>
               </h6>
               <span class="lessons"
-                ><font color="grey">box right middle</font></span
+                ><font color="grey"><b> 14 Lessons 67 Students</b></font></span
               >
             </div>
           </div>
           <!-- box  right middle -->
-          <div class="col d-flex boxTextImg">
-            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
-
+          <div class="col d-flex boxTextImg p-3">
+            <img
+              src="../assets/img/course-featured-image-01-480x298.jpg"
+              class="borderImg"
+            />
             <div class="col d-flex flex-column textColumn">
-              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h4 class="number">
+                <font color="$mountain-meadow"><b>$ 39.oo</b></font>
+              </h4>
               <h6 class="textStrong">
-                Learning to Write as a professional Author
+                <b>Master jQuery in a Short Period of Time</b>
               </h6>
               <span class="lessons"
-                ><font color="grey">box bottom left</font></span
+                ><font color="grey"><b> 6 Lessons 51 Students</b></font></span
               >
             </div>
           </div>
           <!-- box  bottom left -->
-          <div class="col d-flex boxTextImg">
-            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
-
+          <div class="col d-flex boxTextImg p-3">
+            <img
+              src="../assets/img/stock-full-hd-05-480x298.jpg"
+              class="borderImg"
+            />
             <div class="col d-flex flex-column textColumn">
-              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h4 class="number">
+                <font color="$mountain-meadow"><b>$ 59.oo</b></font>
+              </h4>
               <h6 class="textStrong">
-                Learning to Write as a professional Author
+                <b>Introduction to Javascript for Beginners</b>
               </h6>
               <span class="lessons"
-                ><font color="grey">box bottom right</font></span
+                ><font color="gre"><b> 14 Lessons 76 Students</b></font></span
               >
             </div>
           </div>
           <!-- box  bottom right -->
+          <div class="ps-4 pt-5 d-flex justify-content-center">
+            <button type="button" class="btn btn-success mt-4">
+              <b>View all courses </b>
+            </button>
+          </div>
         </div>
       </div>
     </div>
     <!-- SECTION 3 -->
+    <div class="sectionFour">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center mt-5">
+            <h1 class="ps-4">
+              Why People Talk About
+              <font color="$mountain-meadow">MaxCoach</font>?
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center mt-5">
+        <div class="row row-cols-2">
+          <div class="col">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+            voluptas doloremque aspernatur, animi facere illum officiis pariatur
+            qui corporis iste exercitationem vitae aut consectetur nulla dolores
+            quam velit, ea commodi!
+          </div>
+          <div class="col">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+            voluptas doloremque aspernatur, animi facere illum officiis pariatur
+            qui corporis iste exercitationem vitae aut consectetur nulla dolores
+            quam velit, ea commodi!
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-around">
+            <img src="../assets/img/client-logo-colored-01.png" alt="" />
+            <img src="../assets/img/client-logo-colored-01.png" alt="" />
+            <img src="../assets/img/client-logo-colored-01.png" alt="" />
+            <img src="../assets/img/client-logo-colored-01.png" alt="" />
+            <img src="../assets/img/client-logo-colored-01.png" alt="" />
+            <img src="../assets/img/client-logo-colored-01.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION 4 -->
   </main>
 </template>
 
@@ -322,24 +395,29 @@ export default {
   .btn {
     height: 3rem;
     width: 12rem;
+    background-color: rgb(31, 173, 150);
   }
 }
+// section 2
 .sectionThree {
-  .col-12 {
-    border: 1px solid red;
-  }
+  background-color: rgba(188, 188, 188, 0.158);
+
   img {
     width: 150px;
     height: 150px;
   }
+  .boxTextImg {
+    max-width: 500px;
+  }
   .borderImg {
     border-radius: 50%;
   }
-
   .textColumn {
-    border: 1px solid red;
-    max-width: 22rem;
+    max-width: 18rem;
     padding-top: 1rem;
+  }
+  .textColumn > span {
+    font-size: 13px;
   }
   .number,
   .textStrong,
@@ -349,8 +427,15 @@ export default {
     margin-left: 1rem;
     line-height: 1.5;
   }
+  .btn {
+    height: 3rem;
+    width: 12rem;
+    background-color: rgb(31, 173, 150);
+  }
 }
-// section 2
-
 // section 3
+.sectionFour {
+  background-color: rgb(246, 243, 246);
+}
+// section 4
 </style>
