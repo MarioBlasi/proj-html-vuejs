@@ -11,26 +11,24 @@ export default {
           date: "382 NE191st St#87394 Miami, FL33179-3899",
           tel: "+1(305) 547-9909(9am-5pm EST, Monday-Friday)",
           email: "support@maxcoach.com",
+
+          adress: "Explore",
+          text: "Start here",
+          blog: "Blog",
+          about: "About us",
+
+          a: "/",
+          b: "Success story",
+          c: "Courses",
+          d: "Contact us",
+
+          e: "Information",
+          f: "Membership",
+          g: "Purcase guide",
+          h: "Privacy policy",
+          i: "Terms of services",
         },
       ],
-      // social: [
-      //   {
-      //     iconF: "Address",
-      //     current_page: true,
-      //   },
-      //   {
-      //     iconT: "Explore",
-      //     current_page: false,
-      //   },
-      //   {
-      //     iconI: "Information",
-      //     current_page: false,
-      //   },
-      //   {
-      //     iconIn: "Information",
-      //     current_page: false,
-      //   },
-      // ],
       store,
     };
   },
@@ -48,10 +46,27 @@ export default {
           <p>{{ item.date }}</p>
           <p>{{ item.tel }}</p>
           <p>{{ item.email }}</p>
+          <p></p>
         </div>
-        <div class="col-2" v-if="item.date"></div>
-        <div class="col-2" v-if="item.text"></div>
-        <div class="col-2" v-if="item.text"></div>
+        <div class="col-2" v-if="item.text">
+          <h5>{{ item.adress }}</h5>
+          <p>{{ item.text }}</p>
+          <p>{{ item.blog }}</p>
+          <p>{{ item.about }}</p>
+        </div>
+        <div class="col-2 mt-4" v-if="item.text">
+          <h5>{{}}</h5>
+          <p>{{ item.b }}</p>
+          <p>{{ item.c }}</p>
+          <p>{{ item.d }}</p>
+        </div>
+        <div class="col-2" v-if="item.text">
+          <h5>{{ item.e }}</h5>
+          <p>{{ item.f }}</p>
+          <p>{{ item.g }}</p>
+          <p>{{ item.h }}</p>
+          <p>{{ item.i }}</p>
+        </div>
       </div>
     </div>
   </footer>
