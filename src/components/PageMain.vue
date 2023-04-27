@@ -406,16 +406,46 @@ export default {
         </div>
       </div>
       <!-- TITOLO -->
-      <div class="container text-center d-flex justify-content-center">
-        <div class="row row-cols-auto">
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-          <div class="col">Column</div>
+      <div class="container">
+        <div class="row row-cols HelpYouLearn d-flex justify-content-between">
+          <div class="col-3 learn">
+            <img src="../assets/img/flag.png" height="20%" />
+            <h3 class="pt-3">Idea Discussion</h3>
+            <p>
+              Get teamed up with the specialists who work and teach coding for
+              years at famous universities
+            </p>
+          </div>
+          <div class="col-3 learn">
+            <img src="../assets/img/gear2.png" height="20%" />
+            <h3 class="pt-3">Web Development</h3>
+            <p>
+              Learn to start building a webpage from scratch. You decide your
+              own pace, course and speed.
+            </p>
+          </div>
+          <div class="col-3 learn">
+            <img src="../assets/img/lifesaver.png" height="20%" />
+            <h3 class="pt-3">System Administration</h3>
+            <p>
+              Learners are encouraged to study the mechanism and structure of
+              system administration.
+            </p>
+          </div>
+          <div class="col-3 learn">
+            <img src="../assets/img/pc.png" height="20%" />
+            <h3 class="pt-3">Graphic Design</h3>
+            <p>
+              Have a passion for graphics and arts? Show your talents with
+              confidence and self-assertiveness.
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <!-- SECTION 6 -->
+    <div class="sectionSeven"></div>
+    <!-- SECTION 7 -->
   </main>
 </template>
 
@@ -575,6 +605,19 @@ export default {
 //section 5
 .sectionSix {
   background-color: rgb(255, 255, 255);
+  .HelpYouLearn {
+    margin-top: 5rem;
+
+    .learn {
+      max-height: 400px;
+      max-width: 300px;
+      padding: 1rem;
+    }
+  }
 }
 //section 6
+.sectionSeven {
+  background-color: rgb(255, 255, 255);
+}
+//section 7
 </style>
