@@ -154,6 +154,107 @@ export default {
         <!-- END BIGBOX RIGHT -->
       </div>
     </div>
+    <!-- SECTION 2 -->
+    <div class="sectionThree mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">titolo</div>
+          <div class="col-12 text-center">titolo grande</div>
+        </div>
+      </div>
+      <!-- titolo -->
+      <div class="container text-center">
+        <div class="row row-cols-2 p-5">
+          <div class="col d-flex boxTextImg">
+            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
+
+            <div class="col d-flex flex-column textColumn">
+              <h3 class="number">
+                <font color="green"> <b> $ 40.oo</b></font>
+              </h3>
+              <h6 class="textStrong">
+                Learning to Write as a professional Author
+              </h6>
+              <span class="lessons"
+                ><font color="grey">20 Lessons 50 Students</font></span
+              >
+            </div>
+          </div>
+          <!-- box 1 left TOP -->
+          <div class="col d-flex boxTextImg">
+            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
+
+            <div class="col d-flex flex-column textColumn">
+              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h6 class="textStrong">
+                Learning to Write as a professional Author
+              </h6>
+              <span class="lessons"
+                ><font color="grey">box 2 right top</font></span
+              >
+            </div>
+          </div>
+          <!-- box 2 right top -->
+          <div class="col d-flex boxTextImg">
+            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
+
+            <div class="col d-flex flex-column textColumn">
+              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h6 class="textStrong">
+                Learning to Write as a professional Author
+              </h6>
+              <span class="lessons"
+                ><font color="grey">box left middle</font></span
+              >
+            </div>
+          </div>
+          <!-- box  left middle -->
+          <div class="col d-flex boxTextImg">
+            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
+
+            <div class="col d-flex flex-column textColumn">
+              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h6 class="textStrong">
+                Learning to Write as a professional Author
+              </h6>
+              <span class="lessons"
+                ><font color="grey">box right middle</font></span
+              >
+            </div>
+          </div>
+          <!-- box  right middle -->
+          <div class="col d-flex boxTextImg">
+            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
+
+            <div class="col d-flex flex-column textColumn">
+              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h6 class="textStrong">
+                Learning to Write as a professional Author
+              </h6>
+              <span class="lessons"
+                ><font color="grey">box bottom left</font></span
+              >
+            </div>
+          </div>
+          <!-- box  bottom left -->
+          <div class="col d-flex boxTextImg">
+            <img src="../assets/img/course-02-480x298.jpg" class="borderImg" />
+
+            <div class="col d-flex flex-column textColumn">
+              <h2 class="number"><font color="green">$ 40.oo</font></h2>
+              <h6 class="textStrong">
+                Learning to Write as a professional Author
+              </h6>
+              <span class="lessons"
+                ><font color="grey">box bottom right</font></span
+              >
+            </div>
+          </div>
+          <!-- box  bottom right -->
+        </div>
+      </div>
+    </div>
+    <!-- SECTION 3 -->
   </main>
 </template>
 
@@ -223,5 +324,33 @@ export default {
     width: 12rem;
   }
 }
+.sectionThree {
+  .col-12 {
+    border: 1px solid red;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .borderImg {
+    border-radius: 50%;
+  }
+
+  .textColumn {
+    border: 1px solid red;
+    max-width: 22rem;
+    padding-top: 1rem;
+  }
+  .number,
+  .textStrong,
+  .lessons {
+    display: flex;
+    justify-content: start;
+    margin-left: 1rem;
+    line-height: 1.5;
+  }
+}
 // section 2
+
+// section 3
 </style>
