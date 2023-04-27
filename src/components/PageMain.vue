@@ -343,21 +343,79 @@ export default {
       </div>
     </div>
     <!-- SECTION 4 -->
-    <div class="section">
+    <div class="sectionFive">
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p>CHOSE A COURSE TO STARTED</p>
+        <div class="row mt-5">
+          <div class="col-12 text-center mt-5">
+            <p>ENJOY READING ON MAXCOACH</p>
           </div>
           <div class="col-12 text-center">
             <h1 class="ps-4">
-              Latest Featured <font color="$mountain-meadow">Courses</font>
+              Latest On<font color="$mountain-meadow"> Our Blogs</font>
             </h1>
           </div>
         </div>
       </div>
+      <div class="container text-center">
+        <div class="row row-cols-3 mt-5">
+          <div class="col imgxThree d-flex flex-column">
+            <img src="../assets/img/artist-blog-03-480x325.jpeg" height="60%" />
+            <div class="col textFive text-start mt-3">
+              <h6>ARTIST</h6>
+              <h4>Brush Strokers Energize Trees in Paintings</h4>
+              <span class="spanFive"> May 15, 2020 &nbsp</span>
+              <span class="spanFive"> &nbsp 688 views</span>
+            </div>
+          </div>
+          <!-- img x One -->
+          <div class="col imgxThree d-flex flex-column">
+            <img src="../assets/img/artist-blog-01-480x325.jpg" height="60%" />
+            <div class="col textFive text-start mt-3">
+              <h6>ARTIST</h6>
+              <h4>Pocket-Sized Notebooks Hold Miniature Paintings</h4>
+              <span class="spanFive"> May 15, 2020 &nbsp</span>
+              <span class="spanFive"> &nbsp 603 views</span>
+            </div>
+          </div>
+          <!-- img x Two -->
+          <div class="col imgxThree d-flex flex-column">
+            <img src="../assets/img/artist-blog-02-480x325.jpg" height="60%" />
+            <div class="col textFive text-start mt-3">
+              <h6>ARTIST</h6>
+              <h4>Connection Between Self-Portraits and Identity</h4>
+              <span class="spanFive"> May 15, 2020 &nbsp</span>
+              <span class="spanFive"> &nbsp 397 views</span>
+            </div>
+          </div>
+          <!-- img x Three -->
+        </div>
+      </div>
     </div>
     <!-- SECTION 5 -->
+    <div class="sectionSix">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 text-center mt-5">
+            <p>WANNA TRANSFORM YOUR LIFE?</p>
+          </div>
+          <div class="col-12 text-center">
+            <h1 class="ps-4">
+              Glad to<font color="$mountain-meadow"> Help You</font> Learn
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- TITOLO -->
+      <div class="container text-center d-flex justify-content-center">
+        <div class="row row-cols-auto">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION 6 -->
   </main>
 </template>
 
@@ -498,6 +556,25 @@ export default {
 }
 // section 4
 .sectionFive {
+  height: 800px;
+  .imgxThree {
+    padding: 1rem;
+  }
+  .textFive > h6 {
+    color: grey;
+  }
+  .spanFive {
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  img {
+    border-radius: 10px;
+  }
 }
 //section 5
+.sectionSix {
+  background-color: rgb(255, 255, 255);
+}
+//section 6
 </style>
