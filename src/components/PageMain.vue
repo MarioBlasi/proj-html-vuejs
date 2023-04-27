@@ -444,8 +444,42 @@ export default {
       </div>
     </div>
     <!-- SECTION 6 -->
-    <div class="sectionSeven"></div>
+    <div class="sectionSeven">
+      <div class="flex-container text-center">
+        <div class="row">
+          <div class="col">
+            <img
+              src="../assets/img/home-6-services-image.png"
+              height="110%"
+              class="imghome"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- SECTION 7 -->
+    <div class="sectionEight">
+      <div class="flex-container">
+        <div class="row">
+          <div class="col-12 text-center getStarted">
+            <h5 class="ps-4">
+              Start today for getting
+              <font color="$mountain-meadow"> Online Certification</font>
+            </h5>
+          </div>
+          <div class="col-12 text-center">
+            <h3 class="ps-4">
+              You can be your own guiding star with our help!
+            </h3>
+          </div>
+          <div class="ps-4 pt-5 d-flex justify-content-center">
+            <button type="button" class="btn btn-success">
+              <b>Get started now</b>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -604,7 +638,7 @@ export default {
 }
 //section 5
 .sectionSix {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241, 243, 246);
   .HelpYouLearn {
     margin-top: 5rem;
 
@@ -617,7 +651,22 @@ export default {
 }
 //section 6
 .sectionSeven {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241, 243, 246);
+  .imghome {
+    margin: -0.7rem;
+  }
 }
 //section 7
+.sectionEight {
+  background-color: rgb(255, 255, 255);
+  height: 350px;
+  .getStarted {
+    margin-top: 5rem;
+  }
+  .btn {
+    height: 3rem;
+    width: 15rem;
+    background-color: rgb(31, 173, 150);
+  }
+}
 </style>
