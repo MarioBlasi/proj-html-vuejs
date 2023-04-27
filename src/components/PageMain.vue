@@ -300,34 +300,64 @@ export default {
       </div>
       <div class="container text-center mt-5">
         <div class="row row-cols-2">
-          <div class="col">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-            voluptas doloremque aspernatur, animi facere illum officiis pariatur
-            qui corporis iste exercitationem vitae aut consectetur nulla dolores
-            quam velit, ea commodi!
+          <div class="col pos">
+            <p></p>
+            <img
+              class="maxcoach"
+              src="../assets/img/maxcoach-shape-05-150x150.png"
+              alt=""
+            />
+            <img
+              class="testimonial"
+              src="../assets/img/testimonial-avata-02.jpg"
+              alt=""
+            />
           </div>
           <div class="col">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-            voluptas doloremque aspernatur, animi facere illum officiis pariatur
-            qui corporis iste exercitationem vitae aut consectetur nulla dolores
-            quam velit, ea commodi!
+            <h2 class="sponsor">
+              I am free to learn at my own pace, follow my own schedule and
+              choose the subject i like. Great study portal for people like me.
+            </h2>
+            <div class="pt-4 m-3">
+              <h6 class="d-flex justify-content-start">MINA HOLLANCE</h6>
+              <div>
+                <h6 class="d-flex justify-content-start">
+                  <font color="grey">/Freelancer</font>
+                </h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="container mt-5">
         <div class="row">
-          <div class="col-12 d-flex justify-content-around">
-            <img src="../assets/img/client-logo-colored-01.png" alt="" />
-            <img src="../assets/img/client-logo-colored-01.png" alt="" />
-            <img src="../assets/img/client-logo-colored-01.png" alt="" />
-            <img src="../assets/img/client-logo-colored-01.png" alt="" />
-            <img src="../assets/img/client-logo-colored-01.png" alt="" />
-            <img src="../assets/img/client-logo-colored-01.png" alt="" />
+          <div class="col-12 d-flex justify-content-around" id="sponsor">
+            <img src="../assets/img/client-logo-colored-01.png" height="70%" />
+            <img src="../assets/img/client-logo-colored-02.png" height="60%" />
+            <img src="../assets/img/client-logo-colored-03.png" height="70%" />
+            <img src="../assets/img/client-logo-colored-04.png" height="40%" />
+            <img src="../assets/img/client-logo-colored-05.png" height="40%" />
+            <img src="../assets/img/client-logo-colored-06.png" height="30%" />
           </div>
         </div>
       </div>
     </div>
     <!-- SECTION 4 -->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>CHOSE A COURSE TO STARTED</p>
+          </div>
+          <div class="col-12 text-center">
+            <h1 class="ps-4">
+              Latest Featured <font color="$mountain-meadow">Courses</font>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION 5 -->
   </main>
 </template>
 
@@ -435,7 +465,39 @@ export default {
 }
 // section 3
 .sectionFour {
-  background-color: rgb(246, 243, 246);
+  background-color: rgb(255, 255, 255);
+
+  .sponsor {
+    line-height: 1.5;
+  }
+  .pos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .pos > p {
+    width: 6rem;
+    height: 6rem;
+    background-color: burlywood;
+    border-radius: 50%;
+    position: absolute;
+    left: 14rem;
+  }
+  .testimonial {
+    background-color: burlywood;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+  }
+  .maxcoach {
+    position: absolute;
+    top: 6rem;
+    right: 13rem;
+    z-index: 1;
+  }
 }
 // section 4
+.sectionFive {
+}
+//section 5
 </style>
