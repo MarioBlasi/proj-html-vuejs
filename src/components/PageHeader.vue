@@ -6,8 +6,6 @@ export default {
   data() {
     return { store };
   },
-
-  methods: {},
 };
 </script>
 
@@ -45,31 +43,36 @@ export default {
     </div>
     <!-- header top -->
     <div class="headerBottom">
-      <div class="flex-container">
+      <div class="container text-center">
         <div class="row">
-          <div class="col">
-            <img class="left" src="../assets/img/home-6-hero-left-person.png" />
-          </div>
-
-          <div class="col" id="image-container">
-            <img
-              class="middle"
-              src="../assets/img/home-6-hero-poster-final.jpg "
-              alt=""
-            />
-            <img
-              class="youtube"
-              src="../assets/img/icon-youtube-play3.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="col">
-            <img
-              class="right"
-              src="../assets/img/home-6-hero-right-person-195x300.png "
-              alt=""
-            />
+          <div class="col bigBox d-flex justify-content-center">
+            <div class="col-3">
+              <img
+                class="left"
+                src="../assets/img/home-6-hero-left-person.png"
+              />
+            </div>
+            <!-- LEFT IMG -->
+            <div class="col-3" id="image-container">
+              <img
+                class="middle"
+                src="../assets/img/home-6-hero-poster-final.jpg "
+                alt=""
+              />
+            </div>
+            <!-- IMG CENTRALE -->
+            <div class="col-3">
+              <img class="youtube" src="../assets/img/youtube-play.png" />
+            </div>
+            <!-- IMG YOU TUBE -->
+            <div class="col-3">
+              <img
+                class="right"
+                src="../assets/img/home-6-hero-right-person-195x300.png "
+                alt=""
+              />
+            </div>
+            <!-- IMG RIGHT -->
           </div>
         </div>
       </div>
@@ -107,32 +110,33 @@ header {
     background-color: rgb(31, 33, 84);
 
     .middle {
-      bottom: -5rem;
-      border: 1.5rem solid rgb(246, 243, 246);
+      top: 50%;
+      left: -20%;
+      margin-top: -8rem;
+      border: 1.5rem solid white;
       border-radius: 10px;
       position: relative;
     }
     .youtube {
       position: absolute;
-      top: 50%;
+      top: 65%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
-      width: 100%;
-      height: 100%;
       object-fit: cover;
+      max-width: 100%;
     }
     .left {
       position: absolute;
-      bottom: 2rem;
-      left: 12rem;
+      bottom: 10%;
+      right: 67%;
       height: 550px;
     }
 
     .right {
       position: absolute;
-      bottom: -5rem;
-      right: 23rem;
+      top: 70%;
+      left: 70%;
       height: 300px;
     }
   }

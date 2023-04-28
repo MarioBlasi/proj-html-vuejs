@@ -3,11 +3,13 @@ import { store } from "../store";
 
 export default {
   name: "PageFooter",
+  data() {
+    return { store };
+  },
   props: {
     title1: {
-      store,
       type: String,
-      default: "Information",
+      default: "Address",
     },
     year: {
       type: Number,
@@ -29,6 +31,7 @@ export default {
       type: String,
       default: "support@maxcoach.com",
     },
+    // EXPLORE
     explore: {
       type: String,
       default: "Explore",
@@ -45,6 +48,7 @@ export default {
       type: String,
       default: "About us",
     },
+    // SENZA TITOLO
     successStory: {
       type: String,
       default: "Success story",
@@ -57,6 +61,7 @@ export default {
       type: String,
       default: "Contact us",
     },
+    // INFORMATION
     information: {
       type: String,
       default: "Information",
@@ -133,7 +138,8 @@ export default {
           <p>{{ aboutUs }}</p>
         </div>
         <div class="col-2 mt-4" v-if="showLinks">
-          <h5>{{ successStory }}</h5>
+          <h5>{{}}</h5>
+          <p>{{ successStory }}</p>
           <p>{{ courses }}</p>
           <p>{{ contactUs }}</p>
         </div>
@@ -164,7 +170,7 @@ export default {
 <style lang="scss">
 footer {
   height: 500px;
-  background-color: rgb(241, 243, 242);
+  background-color: rgb(248, 248, 248);
   .social {
     margin-right: 3rem;
     color: grey;

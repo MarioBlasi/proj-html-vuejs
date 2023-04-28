@@ -2,39 +2,45 @@
 import { store } from "../store";
 
 export default {
-  name: " PageNav",
+  name: "PageNav",
+  props: {
+    currentPage: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       menu: [
         {
           text: "Home",
           href: "#",
-          current_page: true,
+          current_page: this.currentPage === "home",
         },
         {
           text: "Pages",
           href: "#",
-          current_page: false,
+          current_page: this.currentPage === "pages",
         },
         {
           text: "Courses",
           href: "#",
-          current_page: false,
+          current_page: this.currentPage === "courses",
         },
         {
           text: "Features",
           href: "#",
-          current_page: false,
+          current_page: this.currentPage === "features",
         },
         {
           text: "Blog",
           href: "#",
-          current_page: false,
+          current_page: this.currentPage === "blog",
         },
         {
           text: "Shop",
           href: "#",
-          current_page: false,
+          current_page: this.currentPage === "shop",
         },
       ],
       store,
@@ -50,7 +56,7 @@ export default {
     <div class="container">
       <div class="row logo">
         <div class="col">
-          <img height="40" src="../assets/img/light-logo.png" alt="" />
+          <img height="30" src="../assets/img/light-logo.png" alt="" />
         </div>
       </div>
       <div class="row link">
@@ -69,7 +75,7 @@ export default {
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                <li class="nav-item p-2" v-for="item in menu">
+                <li class="nav-item p-2" v-for="item in menu" :key="item.text">
                   <a
                     class="nav-link active nav-link dropdown-toggle"
                     :href="item.href"
@@ -77,7 +83,9 @@ export default {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    >{{ item.text }}
+                    :class="{ active: item.current_page }"
+                  >
+                    {{ item.text }}
                   </a>
                 </li>
               </ul>
@@ -128,7 +136,7 @@ export default {
     height: 3rem;
   }
   .icon {
-    font-size: x-large;
+    font-size: large;
     color: aliceblue;
   }
   #icone {

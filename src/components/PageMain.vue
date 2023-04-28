@@ -485,8 +485,8 @@ export default {
 
 <style lang="scss">
 .sectionOne {
-  margin-top: 6rem;
-  background-color: rgb(246, 243, 246);
+  padding-top: 5rem;
+  background-color: rgb(249, 249, 249);
 
   .titleOne {
     padding-top: 10rem;
@@ -506,7 +506,7 @@ export default {
 }
 // sectiob 1
 .sectionTwo {
-  background-color: rgb(246, 243, 246);
+  background-color: rgb(249, 249, 249);
   .verticalLeft,
   .verticalRight {
     background-color: rgb(255, 255, 255);
@@ -552,8 +552,7 @@ export default {
 }
 // section 2
 .sectionThree {
-  background-color: rgba(188, 188, 188, 0.158);
-
+  background-color: rgb(245, 247, 250);
   img {
     width: 150px;
     height: 150px;
@@ -587,7 +586,7 @@ export default {
 }
 // section 3
 .sectionFour {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(254, 254, 254);
 
   .sponsor {
     line-height: 1.5;
@@ -620,6 +619,7 @@ export default {
 }
 // section 4
 .sectionFive {
+  background-color: rgb(248, 248, 248);
   height: 800px;
   .imgxThree {
     padding: 1rem;
@@ -638,7 +638,7 @@ export default {
 }
 //section 5
 .sectionSix {
-  background-color: rgb(241, 243, 246);
+  background-color: rgb(254, 254, 254);
   .HelpYouLearn {
     margin-top: 5rem;
 
@@ -651,7 +651,7 @@ export default {
 }
 //section 6
 .sectionSeven {
-  background-color: rgb(241, 243, 246);
+  background-color: rgb(248, 248, 248);
   .imghome {
     margin: -0.7rem;
   }
