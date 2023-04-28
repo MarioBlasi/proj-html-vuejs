@@ -1,6 +1,4 @@
 <script>
-import { store } from "../store";
-
 export default {
   name: "PageNav",
   props: {
@@ -15,38 +13,46 @@ export default {
         {
           text: "Home",
           href: "#",
-          current_page: this.currentPage === "home",
+          pageName: "home",
         },
         {
           text: "Pages",
           href: "#",
-          current_page: this.currentPage === "pages",
+          pageName: "pages",
         },
         {
           text: "Courses",
           href: "#",
-          current_page: this.currentPage === "courses",
+          pageName: "courses",
         },
         {
           text: "Features",
           href: "#",
-          current_page: this.currentPage === "features",
+          pageName: "features",
         },
         {
           text: "Blog",
           href: "#",
-          current_page: this.currentPage === "blog",
+          pageName: "blog",
         },
         {
           text: "Shop",
           href: "#",
-          current_page: this.currentPage === "shop",
+          pageName: "shop",
         },
       ],
-      store,
     };
   },
-
+  computed: {
+    currentMenu() {
+      return this.menu.map((item) => {
+        return {
+          ...item,
+          current_page: item.pageName === this.currentPage,
+        };
+      });
+    },
+  },
   methods: {},
 };
 </script>
@@ -76,7 +82,11 @@ export default {
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                <li class="nav-item p-2" v-for="item in menu" :key="item.text">
+                <li
+                  class="nav-item p-2"
+                  v-for="item in currentMenu"
+                  :key="item.text"
+                >
                   <a
                     class="nav-link active nav-link dropdown-toggle"
                     :href="item.href"
