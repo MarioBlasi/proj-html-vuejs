@@ -417,34 +417,52 @@ export default {
         </div>
       </div>
       <div class="container text-center">
-        <div class="row row-cols-3 mt-5">
-          <div class="col imgxThree d-flex flex-column">
-            <img src="../assets/img/artist-blog-03-480x325.jpeg" height="60%" />
+        <div class="row row-cols-3 mt-5 d-flex justify-content-center">
+          <div class="col-3 imgxThree d-flex flex-column">
+            <img src="../assets/img/artist-blog-03-480x325.jpeg" />
             <div class="col textFive text-start mt-3">
               <h6>ARTIST</h6>
-              <h4>Brush Strokers Energize Trees in Paintings</h4>
-              <span class="spanFive"> May 15, 2020 &nbsp</span>
-              <span class="spanFive"> &nbsp 688 views</span>
+              <h4>Brush Strokes Energize Trees in Paintings</h4>
+              <span class="spanFive"
+                ><font-awesome-icon icon="fa-regular fa-calendar" /> May 15,
+                2020 &nbsp
+              </span>
+              <span class="spanFive"
+                ><font-awesome-icon icon="fa-solid fa-eye" /> &nbsp 603
+                views</span
+              >
             </div>
           </div>
           <!-- img x One -->
-          <div class="col imgxThree d-flex flex-column">
-            <img src="../assets/img/artist-blog-01-480x325.jpg" height="60%" />
+          <div class="col-3 imgxThree d-flex flex-column">
+            <img src="../assets/img/artist-blog-01-480x325.jpg" />
             <div class="col textFive text-start mt-3">
               <h6>ARTIST</h6>
               <h4>Pocket-Sized Notebooks Hold Miniature Paintings</h4>
-              <span class="spanFive"> May 15, 2020 &nbsp</span>
-              <span class="spanFive"> &nbsp 603 views</span>
+              <span class="spanFive"
+                ><font-awesome-icon icon="fa-regular fa-calendar" /> May 15,
+                2020 &nbsp
+              </span>
+              <span class="spanFive"
+                ><font-awesome-icon icon="fa-solid fa-eye" /> &nbsp 603
+                views</span
+              >
             </div>
           </div>
           <!-- img x Two -->
-          <div class="col imgxThree d-flex flex-column">
-            <img src="../assets/img/artist-blog-02-480x325.jpg" height="60%" />
+          <div class="col-3 imgxThree d-flex flex-column">
+            <img src="../assets/img/artist-blog-02-480x325.jpg" />
             <div class="col textFive text-start mt-3">
               <h6>ARTIST</h6>
               <h4>Connection Between Self-Portraits and Identity</h4>
-              <span class="spanFive"> May 15, 2020 &nbsp</span>
-              <span class="spanFive"> &nbsp 397 views</span>
+              <span class="spanFive"
+                ><font-awesome-icon icon="fa-regular fa-calendar" /> May 15,
+                2020 &nbsp
+              </span>
+              <span class="spanFive"
+                ><font-awesome-icon icon="fa-solid fa-eye" /> &nbsp 397
+                views</span
+              >
             </div>
           </div>
           <!-- img x Three -->
@@ -616,11 +634,11 @@ export default {
   background-color: rgb(245, 247, 250);
   img {
     max-width: 30%;
-
     height: auto;
     object-fit: cover;
     border-radius: 100%;
   }
+
   .boxTextImg {
     max-width: 500px;
   }
@@ -689,9 +707,12 @@ export default {
 // section 4
 .sectionFive {
   background-color: rgb(248, 248, 248);
-  height: 800px;
+  padding-bottom: 5rem;
   .imgxThree {
-    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .imgxThree > img {
+    max-width: 100%;
   }
   .textFive > h6 {
     color: grey;

@@ -103,7 +103,7 @@ header {
       flex-direction: column;
       border-radius: 5px;
       width: 2.5rem;
-      top: 10rem;
+      top: 8rem;
       right: 0rem;
       background-color: rgb(246, 243, 246);
       color: black;

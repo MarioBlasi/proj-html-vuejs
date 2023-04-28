@@ -19,6 +19,8 @@ import { faLifeRing } from "@fortawesome/free-solid-svg-icons";
 import { faRulerCombined } from "@fortawesome/free-solid-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 
+import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 // SOCIAL
 import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -37,6 +39,8 @@ library.add(
   faSquareFacebook,
   faTwitter,
   faInstagram,
-  faLinkedin
+  faLinkedin,
+  faEye,
+  faCalendar
 );
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
