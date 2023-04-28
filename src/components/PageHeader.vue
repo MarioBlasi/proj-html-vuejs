@@ -272,12 +272,12 @@ header {
     height: 300px;
   }
   .whiteBox {
-    width: 20rem;
-    height: 10rem;
+    width: 100%;
+    height: 50%;
     background-color: rgb(249, 249, 249);
     position: absolute;
-    bottom: -97%;
-    right: 20%;
+    bottom: -100%;
+    right: 0%;
   }
 }
 .btn {
