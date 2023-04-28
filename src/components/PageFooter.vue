@@ -157,12 +157,13 @@ export default {
         <div class="col">
           <p class="grey">
             &copy;{{ year }} {{ company }}. All Rights Reserved
+            <b><em>Mario Blasi </em></b>
           </p>
         </div>
       </div>
     </div>
     <button class="scroll-top" v-if="showScrollTop" @click="scrollToTop">
-      <i class="material-icons">^</i>
+      <i class="material-icons">&#8593;</i>
     </button>
   </footer>
 </template>

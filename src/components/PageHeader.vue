@@ -43,14 +43,16 @@ export default {
     </div>
     <!-- header top -->
     <div class="headerBottom">
-      <div class="wave wave1"></div>
-      <div class="wave wave2"></div>
-      <div class="wave wave3"></div>
-      <div class="wave wave4"></div>
-      <div class="wave wave5"></div>
-      <div class="wave wave6"></div>
-      <div class="wave wave7"></div>
-      <div class="wave wave8"></div>
+      <div class="boxwave">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+        <div class="wave wave5"></div>
+        <div class="wave wave6"></div>
+        <div class="wave wave7"></div>
+        <div class="wave wave8"></div>
+      </div>
       <div class="container text-center">
         <div class="row">
           <div class="col bigBox d-flex justify-content-center">
@@ -80,6 +82,7 @@ export default {
                 alt=""
               />
             </div>
+            <div class="whiteBox"></div>
             <!-- IMG RIGHT -->
           </div>
         </div>
@@ -119,122 +122,123 @@ header {
     position: relative;
     background-color: rgb(31, 31, 82);
   }
+  .boxwave {
+    .wave {
+      position: absolute;
+      bottom: 0%;
+      right: -1400px;
+      width: 190%;
+      height: 100%;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(125, 125, 194, 0.644),
+        rgba(95, 95, 150, 0.658),
+        rgba(48, 48, 96, 0.527),
+        rgba(40, 40, 89, 0.521) 15%
+      );
+      background-size: 35% 100%;
+      background-repeat: no-repeat;
+      animation: waves 9s ease-in-out infinite;
+      border-radius: 50%;
+      transform: skewY(-2deg);
+      // transform: rotate(180deg);
+    }
 
-  .wave {
-    position: absolute;
-    bottom: 0%;
-    right: -1400px;
-    width: 190%;
-    height: 100%;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(125, 125, 194, 0.644),
-      rgba(95, 95, 150, 0.658),
-      rgba(48, 48, 96, 0.527),
-      rgba(40, 40, 89, 0.521) 15%
-    );
-    background-size: 35% 100%;
-    background-repeat: no-repeat;
-    animation: waves 9s ease-in-out infinite;
-    border-radius: 50%;
-    transform: skewY(-2deg);
-    // transform: rotate(180deg);
-  }
+    .wave1 {
+      animation-delay: -0.5s;
+    }
 
-  .wave1 {
-    animation-delay: -0.5s;
-  }
+    @keyframes waves {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 0%;
+      }
+    }
+    .wave2 {
+      animation-delay: 1s;
+    }
 
-  @keyframes waves {
-    0% {
-      background-position-x: 0;
+    @keyframes waves {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 20%;
+      }
     }
-    100% {
-      background-position-x: 0%;
+    .wave3 {
+      animation-delay: 2s;
     }
-  }
-  .wave2 {
-    animation-delay: 1s;
-  }
 
-  @keyframes waves {
-    0% {
-      background-position-x: 0;
+    @keyframes waves {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 40%;
+      }
     }
-    100% {
-      background-position-x: 20%;
+    .wave4 {
+      animation-delay: 3s;
     }
-  }
-  .wave3 {
-    animation-delay: 2s;
-  }
 
-  @keyframes waves {
-    0% {
-      background-position-x: 0;
+    @keyframes waves {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 60%;
+      }
     }
-    100% {
-      background-position-x: 40%;
+    .wave5 {
+      animation-delay: 4s;
     }
-  }
-  .wave4 {
-    animation-delay: 3s;
-  }
 
-  @keyframes waves {
-    0% {
-      background-position-x: 0;
+    @keyframes waves {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 80%;
+      }
     }
-    100% {
-      background-position-x: 60%;
+    .wave6 {
+      animation-delay: 5s;
     }
-  }
-  .wave5 {
-    animation-delay: 4s;
-  }
 
-  @keyframes waves {
-    0% {
-      background-position-x: 0;
+    @keyframes waves {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 100%;
+      }
     }
-    100% {
-      background-position-x: 80%;
+    .wave7 {
+      animation-delay: 6s;
     }
-  }
-  .wave6 {
-    animation-delay: 5s;
-  }
 
-  @keyframes waves {
-    0% {
-      background-position-x: 0;
+    @keyframes waves {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 120%;
+      }
     }
-    100% {
-      background-position-x: 100%;
+    .wave8 {
+      animation-delay: 7s;
     }
-  }
-  .wave7 {
-    animation-delay: 6s;
-  }
 
-  @keyframes waves {
-    0% {
-      background-position-x: 0;
-    }
-    100% {
-      background-position-x: 120%;
-    }
-  }
-  .wave8 {
-    animation-delay: 7s;
-  }
-
-  @keyframes waves {
-    0% {
-      background-position-x: 0;
-    }
-    100% {
-      background-position-x: 140%;
+    @keyframes waves {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 140%;
+      }
     }
   }
   .middle {
@@ -263,9 +267,17 @@ header {
 
   .right {
     position: absolute;
-    top: 100%;
+    top: 105%;
     left: 70%;
     height: 300px;
+  }
+  .whiteBox {
+    width: 20rem;
+    height: 10rem;
+    background-color: rgb(249, 249, 249);
+    position: absolute;
+    bottom: -97%;
+    right: 20%;
   }
 }
 .btn {

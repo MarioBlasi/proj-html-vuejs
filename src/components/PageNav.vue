@@ -53,7 +53,7 @@ export default {
 
 <template>
   <nav class="navbar navbar-expand-lg">
-    <div class="notifica"></div>
+    <div class="notifica">.</div>
     <div class="container">
       <div class="row logo">
         <div class="col">
@@ -128,7 +128,6 @@ export default {
   .menu {
     margin-left: 6rem;
     font-size: large;
-    position: relative;
   }
   .notifica {
     width: 14px;
@@ -138,7 +137,7 @@ export default {
     border-radius: 50%;
     top: 24%;
     left: 66%;
-    border: 4px solid rgb(248, 248, 248);
+    border: 5px solid rgb(248, 248, 248);
   }
   .bar {
     margin-right: 3rem;
@@ -150,6 +149,7 @@ export default {
   .icon {
     font-size: large;
     color: aliceblue;
+    position: relative;
   }
   #icone {
     font-size: xx-large;
