@@ -23,6 +23,16 @@ export default {
       <div class="flex-container">
         <div class="row text-center">
           <div class="col d-flex justify-content-center text-center titleOne">
+            <div class="balls">
+              <div class="ball"></div>
+              <div class="ball1"></div>
+              <div class="ball2"></div>
+              <div class="ball3"></div>
+              <div class="ball4"></div>
+              <div class="ball5"></div>
+              <div class="ball6"></div>
+              <div class="ball7"></div>
+            </div>
             <h2>
               Let passion and determination be the guide along the way and
               develop at your own pace that's confortable.
@@ -126,8 +136,8 @@ export default {
         <!-- START BIGBOX  RIGHT-->
         <div class="row">
           <div class="col services">
-            <p class="ps-4">TOGETHER WE CAN CREATE</p>
-            <h1 class="ps-4">
+            <p class="ps-2">TOGETHER WE CAN CREATE</p>
+            <h1 class="ps-2">
               Services We <font color="green">Can Provide</font> For My Clients.
             </h1>
             <div class="list pe-2">
@@ -554,6 +564,16 @@ export default {
             <button type="button" class="btn btn-success">
               <b>Get started now</b>
             </button>
+            <div class="palline">
+              <div class="pallina"></div>
+              <div class="pallina1"></div>
+              <div class="pallina2"></div>
+              <div class="pallina3"></div>
+              <div class="pallina4"></div>
+              <div class="pallina5"></div>
+              <div class="pallina6"></div>
+              <div class="pallina7"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -570,6 +590,7 @@ export default {
   .titleOne {
     padding-top: 10rem;
     width: 300px;
+    position: relative;
     h2 {
       font-size: 30px;
       width: 40rem;
@@ -580,6 +601,73 @@ export default {
     margin: 6rem;
     p {
       font-size: small;
+    }
+  }
+  .balls {
+    .ball {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: rgba(188, 113, 254, 0.603);
+      position: absolute;
+      border-radius: 50%;
+      top: 35%;
+      left: 45%;
+    }
+    .ball1 {
+      width: 2rem;
+      height: 2rem;
+      background-color: rgb(255, 130, 101);
+      position: absolute;
+      border-radius: 50%;
+      top: 80%;
+      left: 15%;
+    }
+    .ball2 {
+      width: 3rem;
+      height: 3rem;
+      background-color: rgb(235, 184, 96);
+      position: absolute;
+      border-radius: 50%;
+      top: 130%;
+      left: 8%;
+    }
+    .ball3 {
+      width: 3rem;
+      height: 3rem;
+      background-color: white;
+      position: absolute;
+      border-radius: 50%;
+      top: 10%;
+      left: 8%;
+      border: 6px solid rgb(143, 214, 202);
+    }
+    .ball4 {
+      width: 3rem;
+      height: 3rem;
+      background-color: white;
+      position: absolute;
+      border-radius: 50%;
+      top: 140%;
+      left: 82%;
+      border: 6px solid rgb(246, 185, 170);
+    }
+    .ball5 {
+      width: 2rem;
+      height: 2rem;
+      background-color: rgb(232, 140, 152);
+      position: absolute;
+      border-radius: 50%;
+      top: 70%;
+      left: 82%;
+    }
+    .ball6 {
+      width: 2rem;
+      height: 2rem;
+      background-color: rgb(170, 184, 241);
+      position: absolute;
+      border-radius: 50%;
+      top: 100%;
+      left: 70%;
     }
   }
 }
@@ -594,6 +682,7 @@ export default {
     margin: 0.7rem;
     padding-top: 2rem;
   }
+
   .verticalLeft {
     margin-top: -2rem;
   }
@@ -601,13 +690,15 @@ export default {
     margin-top: 2rem;
   }
   .row-cols-2 {
-    width: 30%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
   }
 
   .services {
     margin-top: 10rem;
     max-width: 22rem;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
     h1 {
       font-size: 40px;
     }
@@ -707,7 +798,7 @@ export default {
 // section 4
 .sectionFive {
   background-color: rgb(248, 248, 248);
-  padding-bottom: 5rem;
+  padding-bottom: 15rem;
   .imgxThree {
     margin-top: 2rem;
   }
@@ -750,6 +841,7 @@ export default {
 .sectionEight {
   background-color: rgb(255, 255, 255);
   height: 350px;
+  position: relative;
   .getStarted {
     margin-top: 5rem;
   }
@@ -757,6 +849,72 @@ export default {
     height: 3rem;
     width: 15rem;
     background-color: rgb(31, 173, 150);
+  }
+  .palline {
+    .pallina01 {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: rgba(188, 113, 254, 0.603);
+      position: absolute;
+      border-radius: 50%;
+      top: 35%;
+      left: 45%;
+    }
+    .pallina1 {
+      width: 2rem;
+      height: 2rem;
+      background-color: rgb(255, 130, 101);
+      position: absolute;
+      border-radius: 50%;
+      top: -20%;
+      left: 7%;
+    }
+    .pallina2 {
+      width: 3rem;
+      height: 3rem;
+      background-color: rgb(235, 184, 96);
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      left: 8%;
+    }
+    .pallina3 {
+      width: 3rem;
+      height: 3rem;
+      background-color: rgb(248, 248, 248);
+      position: absolute;
+      border-radius: 50%;
+      top: -110%;
+      left: 20%;
+      border: 6px solid rgb(143, 214, 202);
+    }
+    .pallina4 {
+      width: 3rem;
+      height: 3rem;
+      background-color: rgba(143, 214, 202, 0.699);
+      position: absolute;
+      border-radius: 50%;
+      top: -110%;
+      left: 90%;
+    }
+    .pallina5 {
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: rgb(232, 140, 152);
+      position: absolute;
+      border-radius: 50%;
+      top: 10%;
+      left: 82%;
+    }
+    .pallina6 {
+      width: 2rem;
+      height: 2rem;
+      background-color: rgb(170, 184, 241);
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      left: 90%;
+    }
   }
 }
 //section 8
