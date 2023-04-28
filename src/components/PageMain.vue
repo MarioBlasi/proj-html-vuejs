@@ -3,6 +3,12 @@ import { store } from "../store";
 
 export default {
   name: " PageMain",
+  props: {
+    icon: {
+      type: String,
+      default: "user",
+    },
+  },
   data() {
     return { store };
   },
@@ -181,9 +187,18 @@ export default {
               <h6 class="textStrong">
                 <b>Learning to Write as a professional Author </b>
               </h6>
-              <span class="lessons"
-                ><font color="grey"><b> 20 Lessons 50 Students</b></font></span
-              >
+              <span class="lessons">
+                <font-awesome-icon
+                  icon="fa-solid fa-book"
+                  class="icone m-1 p-1"
+                />
+                <b>20 Lessons </b>
+                <font-awesome-icon
+                  :icon="`fa-regular fa-circle-${icon}`"
+                  class="icone m-1 p-1"
+                />
+                <b>50 Students</b>
+              </span>
             </div>
           </div>
           <!-- box 1 left TOP -->
@@ -200,9 +215,18 @@ export default {
               <h6 class="textStrong">
                 <b>Customer-centric Info-Tech Strategies</b>
               </h6>
-              <span class="lessons"
-                ><font color="grey"><b> 24 Lessons 769 Students</b></font></span
-              >
+              <span class="lessons">
+                <font-awesome-icon
+                  icon="fa-solid fa-book"
+                  class="icone m-1 p-1"
+                />
+                <b>24 Lessons </b>
+                <font-awesome-icon
+                  :icon="`fa-regular fa-circle-${icon}`"
+                  class="icone m-1 p-1"
+                />
+                <b>769 Students</b>
+              </span>
             </div>
           </div>
           <!-- box 2 right top -->
@@ -218,9 +242,18 @@ export default {
               <h6 class="textStrong">
                 <b>Open Programming Courses for Everyone:Pyton</b>
               </h6>
-              <span class="lessons"
-                ><font color="grey"><b> 17 Lessons 62 Students</b></font></span
-              >
+              <span class="lessons">
+                <font-awesome-icon
+                  icon="fa-solid fa-book"
+                  class="icone m-1 p-1"
+                />
+                <b>17 Lessons </b>
+                <font-awesome-icon
+                  :icon="`fa-regular fa-circle-${icon}`"
+                  class="icone m-1 p-1"
+                />
+                <b>62 Students</b>
+              </span>
             </div>
           </div>
           <!-- box  left middle -->
@@ -236,9 +269,18 @@ export default {
               <h6 class="textStrong">
                 <b>Accademic Listening and Note-taking</b>
               </h6>
-              <span class="lessons"
-                ><font color="grey"><b> 14 Lessons 67 Students</b></font></span
-              >
+              <span class="lessons">
+                <font-awesome-icon
+                  icon="fa-solid fa-book"
+                  class="icone m-1 p-1"
+                />
+                <b>14 Lessons </b>
+                <font-awesome-icon
+                  :icon="`fa-regular fa-circle-${icon}`"
+                  class="icone m-1 p-1"
+                />
+                <b>67 Students</b>
+              </span>
             </div>
           </div>
           <!-- box  right middle -->
@@ -254,9 +296,18 @@ export default {
               <h6 class="textStrong">
                 <b>Master jQuery in a Short Period of Time</b>
               </h6>
-              <span class="lessons"
-                ><font color="grey"><b> 6 Lessons 51 Students</b></font></span
-              >
+              <span class="lessons">
+                <font-awesome-icon
+                  icon="fa-solid fa-book"
+                  class="icone m-1 p-1"
+                />
+                <b>6 Lessons </b>
+                <font-awesome-icon
+                  :icon="`fa-regular fa-circle-${icon}`"
+                  class="icone m-1 p-1"
+                />
+                <b>51 Students</b>
+              </span>
             </div>
           </div>
           <!-- box  bottom left -->
@@ -272,9 +323,18 @@ export default {
               <h6 class="textStrong">
                 <b>Introduction to Javascript for Beginners</b>
               </h6>
-              <span class="lessons"
-                ><font color="gre"><b> 14 Lessons 76 Students</b></font></span
-              >
+              <span class="lessons">
+                <font-awesome-icon
+                  icon="fa-solid fa-book"
+                  class="icone m-1 p-1"
+                />
+                <b>14 Lessons </b>
+                <font-awesome-icon
+                  :icon="`fa-regular fa-circle-${icon}`"
+                  class="icone m-1 p-1"
+                />
+                <b>76 Students</b>
+              </span>
             </div>
           </div>
           <!-- box  bottom right -->
@@ -579,6 +639,13 @@ export default {
     justify-content: start;
     margin-left: 1rem;
     line-height: 1.5;
+  }
+  .lessons > .icone {
+    color: grey;
+  }
+  .lessons > b {
+    padding-top: 0.3rem;
+    color: grey;
   }
   .btn {
     height: 3rem;

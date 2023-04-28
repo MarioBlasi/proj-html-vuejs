@@ -48,6 +48,9 @@ export default {
       <div class="wave wave3"></div>
       <div class="wave wave4"></div>
       <div class="wave wave5"></div>
+      <div class="wave wave6"></div>
+      <div class="wave wave7"></div>
+      <div class="wave wave8"></div>
       <div class="container text-center">
         <div class="row">
           <div class="col bigBox d-flex justify-content-center">
@@ -119,24 +122,27 @@ header {
 
   .wave {
     position: absolute;
-    bottom: -10%;
-    left: 0;
-    width: 120%;
-    height: 120%;
+    bottom: 0%;
+    right: -1400px;
+    width: 190%;
+    height: 100%;
     background-image: linear-gradient(
       to bottom,
-      rgba(89, 89, 163, 0.288),
-      rgba(48, 48, 96, 0.192),
-      rgba(40, 40, 89, 0.178) 80%
+      rgba(125, 125, 194, 0.644),
+      rgba(95, 95, 150, 0.658),
+      rgba(48, 48, 96, 0.527),
+      rgba(40, 40, 89, 0.521) 15%
     );
-    background-size: 20% 100%;
+    background-size: 35% 100%;
     background-repeat: no-repeat;
     animation: waves 9s ease-in-out infinite;
     border-radius: 50%;
+    transform: skewY(-2deg);
+    // transform: rotate(180deg);
   }
 
   .wave1 {
-    animation-delay: -3s;
+    animation-delay: -0.5s;
   }
 
   @keyframes waves {
@@ -144,11 +150,11 @@ header {
       background-position-x: 0;
     }
     100% {
-      background-position-x: 100%;
+      background-position-x: 0%;
     }
   }
   .wave2 {
-    animation-delay: -5s;
+    animation-delay: 1s;
   }
 
   @keyframes waves {
@@ -156,11 +162,11 @@ header {
       background-position-x: 0;
     }
     100% {
-      background-position-x: 100%;
+      background-position-x: 20%;
     }
   }
   .wave3 {
-    animation-delay: -8s;
+    animation-delay: 2s;
   }
 
   @keyframes waves {
@@ -168,11 +174,11 @@ header {
       background-position-x: 0;
     }
     100% {
-      background-position-x: 100%;
+      background-position-x: 40%;
     }
   }
   .wave4 {
-    animation-delay: -10s;
+    animation-delay: 3s;
   }
 
   @keyframes waves {
@@ -180,11 +186,23 @@ header {
       background-position-x: 0;
     }
     100% {
-      background-position-x: 100%;
+      background-position-x: 60%;
     }
   }
   .wave5 {
-    animation-delay: -12s;
+    animation-delay: 4s;
+  }
+
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 80%;
+    }
+  }
+  .wave6 {
+    animation-delay: 5s;
   }
 
   @keyframes waves {
@@ -193,6 +211,30 @@ header {
     }
     100% {
       background-position-x: 100%;
+    }
+  }
+  .wave7 {
+    animation-delay: 6s;
+  }
+
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 120%;
+    }
+  }
+  .wave8 {
+    animation-delay: 7s;
+  }
+
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 140%;
     }
   }
   .middle {
@@ -205,7 +247,7 @@ header {
   }
   .youtube {
     position: absolute;
-    top: 65%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
