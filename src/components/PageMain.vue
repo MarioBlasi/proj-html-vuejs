@@ -480,6 +480,7 @@ export default {
         </div>
       </div>
     </div>
+    <!-- SECTION 8 -->
   </main>
 </template>
 
@@ -554,15 +555,16 @@ export default {
 .sectionThree {
   background-color: rgb(245, 247, 250);
   img {
-    width: 150px;
-    height: 150px;
+    max-width: 30%;
+
+    height: auto;
+    object-fit: cover;
+    border-radius: 100%;
   }
   .boxTextImg {
     max-width: 500px;
   }
-  .borderImg {
-    border-radius: 50%;
-  }
+
   .textColumn {
     max-width: 18rem;
     padding-top: 1rem;
@@ -669,4 +671,5 @@ export default {
     background-color: rgb(31, 173, 150);
   }
 }
+//section 8
 </style>

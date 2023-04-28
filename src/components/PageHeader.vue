@@ -43,6 +43,11 @@ export default {
     </div>
     <!-- header top -->
     <div class="headerBottom">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+      <div class="wave wave5"></div>
       <div class="container text-center">
         <div class="row">
           <div class="col bigBox d-flex justify-content-center">
@@ -83,7 +88,8 @@ export default {
 
 <style lang="scss">
 header {
-  background-color: rgb(31, 33, 84);
+  background-color: rgb(31, 31, 82);
+
   .headerTop {
     color: white;
     .title {
@@ -107,43 +113,122 @@ header {
     }
   }
   .headerBottom {
-    background-color: rgb(31, 33, 84);
+    position: relative;
+    background-color: rgb(31, 31, 82);
+  }
 
-    .middle {
-      top: 50%;
-      left: -20%;
-      margin-top: -8rem;
-      border: 1.5rem solid white;
-      border-radius: 10px;
-      position: relative;
-    }
-    .youtube {
-      position: absolute;
-      top: 65%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1;
-      object-fit: cover;
-      max-width: 100%;
-    }
-    .left {
-      position: absolute;
-      bottom: 10%;
-      right: 67%;
-      height: 550px;
-    }
+  .wave {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(89, 89, 163, 0.288),
+      rgba(48, 48, 96, 0.192),
+      rgba(40, 40, 89, 0.178) 80%
+    );
+    background-size: 20% 100%;
+    background-repeat: no-repeat;
+    animation: waves 9s ease-in-out infinite;
+    border-radius: 50%;
+  }
 
-    .right {
-      position: absolute;
-      top: 70%;
-      left: 70%;
-      height: 300px;
+  .wave1 {
+    animation-delay: -3s;
+  }
+
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 100%;
     }
   }
-  .btn {
-    height: 3.5rem;
-    width: 12rem;
-    background-color: rgb(39, 171, 148);
+  .wave2 {
+    animation-delay: -5s;
   }
+
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 100%;
+    }
+  }
+  .wave3 {
+    animation-delay: -8s;
+  }
+
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 100%;
+    }
+  }
+  .wave4 {
+    animation-delay: -10s;
+  }
+
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 100%;
+    }
+  }
+  .wave5 {
+    animation-delay: -12s;
+  }
+
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 100%;
+    }
+  }
+  .middle {
+    top: 50%;
+    left: -20%;
+    margin-top: -8rem;
+    border: 1.5rem solid white;
+    border-radius: 10px;
+    position: relative;
+  }
+  .youtube {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .left {
+    position: absolute;
+    top: 0%;
+    right: 67%;
+    height: 550px;
+  }
+
+  .right {
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    height: 300px;
+  }
+}
+.btn {
+  height: 3.5rem;
+  width: 12rem;
+  background-color: rgb(39, 171, 148);
 }
 </style>
